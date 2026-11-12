@@ -13,7 +13,7 @@ public class StunlockState : AbstractState
     {
         apc.ClearFields();
         apc.stunlockDuration = 0.4f;
-        apc.actionVelocity = 4f;
+        apc.actionVelocity = 3f;
         apc.stunLock = true;
         Debug.Log("Stun");
     }

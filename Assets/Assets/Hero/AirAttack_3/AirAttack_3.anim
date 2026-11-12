@@ -7,7 +7,7 @@ AnimationClip:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AirAttack_3
-  serializedVersion: 7
+  serializedVersion: 8
   m_Legacy: 0
   m_Compressed: 0
   m_UseHighQualityCurve: 1
@@ -21,13 +21,15 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: -2112345024162967226, guid: d5761769470e4d543ba12ea7f223b2e3, type: 3}
-    - time: 0.083333336
+      value: {fileID: -9078657624248898161, guid: f9d0d8a6dd12a7847bb3ee24b9d6230a, type: 3}
+    - time: 0.1
       value: {fileID: 575806359972733289, guid: ccbf2b6cf96354c4bb65d5520f5aef51, type: 3}
-    - time: 0.16666667
-      value: {fileID: 8782553767887672875, guid: 23610c44116cc2840a58eb3586891fb7, type: 3}
+    - time: 0.2
+      value: {fileID: -9028280494296330970, guid: 6011bd8398369a54883fd47f13e73c74, type: 3}
     - time: 0.28333333
-      value: {fileID: 8782553767887672875, guid: 23610c44116cc2840a58eb3586891fb7, type: 3}
+      value: {fileID: -4078679931114562209, guid: 6f7229d1d6bc889418d5651da89642c8, type: 3}
+    - time: 0.35
+      value: {fileID: -4078679931114562209, guid: 6f7229d1d6bc889418d5651da89642c8, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -49,17 +51,19 @@ AnimationClip:
       isPPtrCurve: 1
       isIntCurve: 0
       isSerializeReferenceCurve: 0
+      metaData: 0
     pptrCurveMapping:
-    - {fileID: -2112345024162967226, guid: d5761769470e4d543ba12ea7f223b2e3, type: 3}
+    - {fileID: -9078657624248898161, guid: f9d0d8a6dd12a7847bb3ee24b9d6230a, type: 3}
     - {fileID: 575806359972733289, guid: ccbf2b6cf96354c4bb65d5520f5aef51, type: 3}
-    - {fileID: 8782553767887672875, guid: 23610c44116cc2840a58eb3586891fb7, type: 3}
-    - {fileID: 8782553767887672875, guid: 23610c44116cc2840a58eb3586891fb7, type: 3}
+    - {fileID: -9028280494296330970, guid: 6011bd8398369a54883fd47f13e73c74, type: 3}
+    - {fileID: -4078679931114562209, guid: 6f7229d1d6bc889418d5651da89642c8, type: 3}
+    - {fileID: -4078679931114562209, guid: 6f7229d1d6bc889418d5651da89642c8, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.3
+    m_StopTime: 0.36666667
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -79,14 +83,14 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
-  - time: 0.11666667
+  - time: 0.18333334
     functionName: ColliderOn
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 0.23333333
+  - time: 0.28333333
     functionName: ColliderOff
     data: 
     objectReferenceParameter: {fileID: 0}

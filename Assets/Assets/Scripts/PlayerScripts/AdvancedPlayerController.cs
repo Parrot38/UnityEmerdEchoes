@@ -15,7 +15,7 @@ public class AdvancedPlayerController : MonoBehaviour
     public Rigidbody2D rb;
     public BoxCollider2D playerCollider;
     public BoxCollider2D guardCollider;
-    [SerializeField] private BoxCollider2D playerHitBox;
+    public BoxCollider2D playerHitBox;
     [SerializeField] private GameObject feet;
     [SerializeField] private Animator animator;
     private GroundCheckScrips groundCheckScript;

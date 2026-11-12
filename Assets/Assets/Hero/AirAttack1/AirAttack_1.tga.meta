@@ -56,7 +56,9 @@ TextureImporter:
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
+  spriteTessellationMethod: 0
   spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
@@ -116,12 +118,12 @@ TextureImporter:
       name: AirAttack_1_0
       rect:
         serializedVersion: 2
-        x: 54
-        y: 93
-        width: 128
-        height: 133
+        x: 0
+        y: 0
+        width: 256
+        height: 256
       alignment: 9
-      pivot: {x: 0.8232323, y: 0.5106051}
+      pivot: {x: 0.6, y: 0.7}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -138,7 +140,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 8f220baa9ddac7e48b72deda7a4ed150
+    spriteID: 5c0085cc86755b64790abe5af68ed0db
     internalID: 0
     vertices: []
     indices: 

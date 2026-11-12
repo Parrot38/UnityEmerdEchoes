@@ -10,9 +10,11 @@ public class EnemySkyKnock : EnemyAbstactState
 
     public override void Enter()
     {
+        eController.animator.Play("aKnokDown",-1,0f);
         Debug.Log("Enemy:KnokedOut");
         eController.rb.linearVelocity = Vector3.zero;
         eController.isAttacking = false;
+        eController.stuned = true;
         
         if (eController.playerController.queueFirsElement==4)
         {
@@ -33,7 +35,7 @@ public class EnemySkyKnock : EnemyAbstactState
     {
         if (eController.grounded && eController.KnokOutDuration<=0)
         {
-            stateHandler.SetState<EnemyIdle>();
+            stateHandler.SetState<StandUp>();
         }
 
     }

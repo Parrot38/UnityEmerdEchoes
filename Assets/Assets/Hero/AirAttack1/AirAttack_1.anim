@@ -7,7 +7,7 @@ AnimationClip:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: AirAttack_1
-  serializedVersion: 7
+  serializedVersion: 8
   m_Legacy: 0
   m_Compressed: 0
   m_UseHighQualityCurve: 1
@@ -21,13 +21,13 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: -5774370174877582837, guid: d9bba48aba13b364fab3096754667600, type: 3}
-    - time: 0.05
       value: {fileID: -6421112968505283895, guid: 497225db03c222d44ae4ab5ae656d039, type: 3}
     - time: 0.1
-      value: {fileID: -6176352873371405693, guid: 8981889e00ae8414698afd356c9aec4f, type: 3}
-    - time: 0.23333333
-      value: {fileID: -6176352873371405693, guid: 8981889e00ae8414698afd356c9aec4f, type: 3}
+      value: {fileID: -1971876174919341572, guid: 8981889e00ae8414698afd356c9aec4f, type: 3}
+    - time: 0.2
+      value: {fileID: -3258494499361961827, guid: 6a261036d58cf294ea2fefe435d864a1, type: 3}
+    - time: 0.33333334
+      value: {fileID: -3258494499361961827, guid: 6a261036d58cf294ea2fefe435d864a1, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -49,17 +49,18 @@ AnimationClip:
       isPPtrCurve: 1
       isIntCurve: 0
       isSerializeReferenceCurve: 0
+      metaData: 0
     pptrCurveMapping:
-    - {fileID: -5774370174877582837, guid: d9bba48aba13b364fab3096754667600, type: 3}
     - {fileID: -6421112968505283895, guid: 497225db03c222d44ae4ab5ae656d039, type: 3}
-    - {fileID: -6176352873371405693, guid: 8981889e00ae8414698afd356c9aec4f, type: 3}
-    - {fileID: -6176352873371405693, guid: 8981889e00ae8414698afd356c9aec4f, type: 3}
+    - {fileID: -1971876174919341572, guid: 8981889e00ae8414698afd356c9aec4f, type: 3}
+    - {fileID: -3258494499361961827, guid: 6a261036d58cf294ea2fefe435d864a1, type: 3}
+    - {fileID: -3258494499361961827, guid: 6a261036d58cf294ea2fefe435d864a1, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.25
+    m_StopTime: 0.35000002
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -79,14 +80,14 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
-  - time: 0.05
+  - time: 0.1
     functionName: ColliderOn
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 0.15
+  - time: 0.2
     functionName: ColliderOff
     data: 
     objectReferenceParameter: {fileID: 0}

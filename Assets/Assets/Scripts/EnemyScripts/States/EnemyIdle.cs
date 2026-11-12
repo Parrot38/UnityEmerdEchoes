@@ -11,6 +11,7 @@ public class EnemyIdle : EnemyAbstactState
     public override void Enter()
     {
         Debug.Log("Enemy:Idle enter");
+        eController.animator.Play("idle");
         eController.SetFacigDirection();
         eController.isAttacking = false;
         eController.stuned = false;

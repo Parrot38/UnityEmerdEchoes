@@ -12,6 +12,8 @@ public class EnemyKnockDown: EnemyAbstactState
         Debug.Log("Enemy:KnokedDown");
         eController.rb.linearVelocity = Vector3.zero;
         eController.isAttacking = false;
+        eController.stuned = true;
+        eController.animator.Play("KnokDown");
 
         if (eController.playerController.queueFirsElement == 7 && !eController.grounded)
         {
@@ -34,7 +36,7 @@ public class EnemyKnockDown: EnemyAbstactState
     {
         if (eController.grounded && eController.KnokOutDuration <= 0)
         {
-            stateHandler.SetState<EnemyIdle>();
+            stateHandler.SetState<StandUp>();
         }
 
     }

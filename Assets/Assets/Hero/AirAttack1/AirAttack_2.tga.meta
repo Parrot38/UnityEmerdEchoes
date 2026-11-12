@@ -8,9 +8,6 @@ TextureImporter:
   - first:
       213: -5062133686587805486
     second: AirAttack_2_1
-  - first:
-      213: -6176352873371405693
-    second: AirAttack_2_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -62,7 +59,9 @@ TextureImporter:
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
+  spriteTessellationMethod: 0
   spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
@@ -119,23 +118,45 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: AirAttack_2_2
+      name: AirAttack_2_0
       rect:
         serializedVersion: 2
-        x: 61
-        y: 90
-        width: 130
-        height: 126
+        x: 0
+        y: 0
+        width: 256
+        height: 256
       alignment: 9
-      pivot: {x: 1.0352547, y: 0.50000024}
+      pivot: {x: 0.73, y: 0.61}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 382fb3f09cf294aa0800000000000000
-      internalID: -6176352873371405693
+      spriteID: cf960ecf01d72a4e0800000000000000
+      internalID: -1971876174919341572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAttack_2_1
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 87
+        width: 130
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d0356d7b30bfb9b0800000000000000
+      internalID: -5062133686587805486
       vertices: []
       indices: 
       edges: []
@@ -144,7 +165,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 977d7061b18ad7b4298c559f12d5bdfc
+    spriteID: 249b8590378c6d44f9bb96f21579945e
     internalID: 0
     vertices: []
     indices: 
@@ -156,7 +177,6 @@ TextureImporter:
     nameFileIdTable:
       AirAttack_2_0: -1971876174919341572
       AirAttack_2_1: -5062133686587805486
-      AirAttack_2_2: -6176352873371405693
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 29bc2f4d6adac4840970d62d4e366951
+guid: f9d0d8a6dd12a7847bb3ee24b9d6230a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8859690127912088439
-    second: AirAttack2_1_0
+      213: -9078657624248898161
+    second: AirAttack3_1_0
+  - first:
+      213: -4393863715623544163
+    second: AirAttack3_1_1
+  - first:
+      213: -7410156398715799880
+    second: AirAttack3_1_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +43,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -56,7 +62,9 @@ TextureImporter:
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
+  spriteTessellationMethod: 0
   spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
@@ -113,23 +121,67 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: AirAttack2_1_0
+      name: AirAttack3_1_0
       rect:
         serializedVersion: 2
-        x: 108
-        y: 104
-        width: 70
-        height: 116
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 0
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.7, y: 0.66}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7733c3e0b31f3fa70800000000000000
-      internalID: 8859690127912088439
+      spriteID: f8da045ddf0220280800000000000000
+      internalID: -9078657624248898161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAttack3_1_1
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 123
+        width: 21
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9ad7c6fa3cd503c0800000000000000
+      internalID: -4393863715623544163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AirAttack3_1_2
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 109
+        width: 114
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b6f47c1406d92990800000000000000
+      internalID: -7410156398715799880
       vertices: []
       indices: 
       edges: []
@@ -138,7 +190,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: b2f35b7d94834644796fcebc3ed2cdf1
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +200,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      AirAttack2_1_0: 8859690127912088439
+      AirAttack3_1_0: -9078657624248898161
+      AirAttack3_1_1: -4393863715623544163
+      AirAttack3_1_2: -7410156398715799880
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -15,6 +15,7 @@ public class KnokdownState : AbstractState
         apc.canLaunch = false;
         apc.canAttack = false;
         apc.knokedDown = true;
+        apc.playerHitBox.enabled = false;
         apc.knokDownDuration = 0.5f;
 
         apc.attackDuration = 0;

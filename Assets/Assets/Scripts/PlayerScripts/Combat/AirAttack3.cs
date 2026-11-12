@@ -13,9 +13,9 @@ public class AirAttack3 : AbstractState
     {
         apc.rb.gravityScale = 1f;
         apc.rb.linearVelocity = Vector2.zero;
-        apc.attackDuration = 0.35f;
+        apc.attackDuration = 0.38f;
         apc.rb.linearVelocityY = 2f;
-        apc.actionVelocity = 4f;
+        apc.actionVelocity = 3.3f;
         apc.isAttacking = true;
         apc.canAttack = true;
         apc.attackIndex = 5;

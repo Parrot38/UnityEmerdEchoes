@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Runtime.InteropServices.WindowsRuntime;
 using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.InputSystem.XR;
@@ -41,7 +42,8 @@ public class EnemyController : MonoBehaviour
     public float attackDuration;
     public float KnokOutDuration;
     public float KnokDownDuration;
-    public float GetUpDuration;
+    public float standUpDuration;
+    public float onHitPushbackDuration;
     #endregion
 
 
@@ -97,7 +99,8 @@ public class EnemyController : MonoBehaviour
     void FixedUpdate()
     {
         stateHandler.FixedStateUpdate();
-
+        if (stuned) onHitPushbackDuration = 0f;
+        if (onHitPushbackDuration>0 && !stuned) OnHitPushback();
     }
 
     #region UnityMisc
@@ -114,6 +117,7 @@ public class EnemyController : MonoBehaviour
         stateHandler.AddState(new EnemyStunLock(stateHandler, this));
         stateHandler.AddState(new EnemySkyKnock(stateHandler, this));
         stateHandler.AddState(new EnemyKnockDown(stateHandler, this));
+        stateHandler.AddState(new StandUp(stateHandler, this));
         stateHandler.SetState<EnemyIdle>();
     }
     #endregion
@@ -157,7 +161,7 @@ public class EnemyController : MonoBehaviour
     }
     public void Run()
     {
-        rb.linearVelocityX = runSpeed * facingDirection;
+        if (onHitPushbackDuration<=0) rb.linearVelocityX = runSpeed * facingDirection;
     }
     public void PerformStunlockAction()
     {
@@ -175,6 +179,10 @@ public class EnemyController : MonoBehaviour
         rb.linearVelocityX = facingDirection * actionVelocity;
         attackDuration -= Time.fixedDeltaTime;
         if (attackDuration <= 0) canAttack = false;
+    }
+    public void PerformStandUpAction()
+    {
+        standUpDuration -= Time.fixedDeltaTime;
     }
     #endregion
     public void AddInList()
@@ -228,6 +236,7 @@ public class EnemyController : MonoBehaviour
             hiTransform.localScale = new Vector3(playerController.facingDirection, 1, 1);
             hiTransform.localPosition = transform.position;
             hitImpactAnimator.Play("hit");
+            onHitPushbackDuration = 0.1f;
             if (health > 0)
             {
                 balance -= 1;
@@ -240,7 +249,7 @@ public class EnemyController : MonoBehaviour
             {
                 SetKnockDownState();
             }
-            else if (playerController.queueFirsElement == 4 || !grounded)
+            else if (playerController.queueFirsElement == 4 && stuned || !grounded)
             {
                 SetKnockOutState();
             }
@@ -255,5 +264,10 @@ public class EnemyController : MonoBehaviour
             SetStunLockState();
             iBarRenderer.ChangeInstalPoints(1);
         }
+    }
+    private void OnHitPushback()
+    {
+        onHitPushbackDuration -= Time.fixedDeltaTime;
+        rb.linearVelocityX = facingDirection * -8f;
     }
 }

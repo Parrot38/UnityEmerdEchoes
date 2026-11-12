@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: d9bba48aba13b364fab3096754667600
+guid: 952512aa95f4a09479ea3a05f06b713e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5774370174877582837
-    second: AirAttack_1 1_0
+      213: 4952926614711478222
+    second: standUp2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -56,7 +56,9 @@ TextureImporter:
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
+  spriteTessellationMethod: 0
   spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
@@ -96,40 +98,27 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: AirAttack_1 1_0
+      name: standUp2_0
       rect:
         serializedVersion: 2
-        x: 100
-        y: 103
-        width: 80
-        height: 120
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 64
+        y: 77
+        width: 165
+        height: 57
+      alignment: 9
+      pivot: {x: 0.5, y: 1.48}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b0abfcc7be05ddfa0800000000000000
-      internalID: -5774370174877582837
+      spriteID: ec7a47ca3845cb440800000000000000
+      internalID: 4952926614711478222
       vertices: []
       indices: 
       edges: []
@@ -138,7 +127,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 1714ad875e1b4784686ab88fc8f84d3d
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +137,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      AirAttack_1 1_0: -5774370174877582837
+      standUp2_0: 4952926614711478222
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
